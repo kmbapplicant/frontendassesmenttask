@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/css/reset.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-top">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="pull-right">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="name-badge">LR</span> Hi Lara
+                                    <i class="icon-dropdown-arrow"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <div class="cover-photo">
+            </div>
+            <div class="container">
+                <div class="profile-info">
+                    <img class="img-thumbnail" src="img/profile-image.png" alt="profile-image">
+                    <h4>Lara Croft</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header/-->
+    <!--Main Content-->
+    <main class="inner">
+        <!--Toolbar-->
+        <section class="toolbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#">Back to Channels</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <!--Toolbar/-->
+        <!--News-->
+        <section class="news">
+            <div class="container">
+                <header>
+                    <h5>ABC News (AU)</h5>
+                </header>
+                <main>
+                    <article>
+                        <div class="row">
+                            <div class="col-md-2 col-xs-12 eq-height">
+                                <img src="img/7060760-1x1-700x700.jpg" class="img-responsive" alt="news-img">
+                            </div>
+                            <div class="col-md-10 col-xs-12 eq-height relative">
+                                <h5>Special approval given to Perth air show which ended in tragedy</h5>
+                                <p>As the search for answers continues over a fatal Swan River plane crash, authorities reveal
+                                    they do not usually approve air displays over public gatherings or boats on the water.
+                                    <small>2017-01-27T08:40:28Z</small>
+                                </p>
+                                <div class="container">
+                                    <small>
+                                <i class="icon-a"></i> <a href="#">http://www.abc.net.au/news/7053638</a>
+                            </small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="row">
+                            <div class="col-md-2 col-xs-12 eq-height">
+                                <img src="img/7060760-1x1-700x700.jpg" class="img-responsive" alt="news-img">
+                            </div>
+                            <div class="col-md-10 col-xs-12 eq-height relative">
+                                <h5>Special approval given to Perth air show which ended in tragedy</h5>
+                                <p>As the search for answers continues over a fatal Swan River plane crash, authorities reveal
+                                    they do not usually approve air displays over public gatherings or boats on the water.
+                                    <small>2017-01-27T08:40:28Z</small>
+                                </p>
+                                <div class="container">
+                                    <small>
+                                <i class="icon-a"></i> <a href="#">http://www.abc.net.au/news/7053638</a>
+                            </small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </section>
+        <!--News/-->
+        <hr>
+    </main>
+    <!--Main/-->
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><small>Copyright Creative Workers</small></div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <ul class="footer-list">
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Cookies</a></li>
+                            <li><a href="">More</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <small class="pull-right">Kissmybutton © 2017</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer/-->
+</body>
+<!--Jquery-->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<!--Bootstrap JS-->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.eq-height').matchHeight();
+    });
+</script>
+
+</html>

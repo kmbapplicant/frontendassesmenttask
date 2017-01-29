@@ -1,0 +1,289 @@
+@import url(../../fonts/styles.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url(../css/reset.css);
+/**Login**/
+#login > .helper > button {
+  width: 300px;
+  background: #5074af;
+  background: -moz-linear-gradient(top, #5074af 0%, #415887 100%);
+  background: -webkit-linear-gradient(top, #5074af 0%, #415887 100%);
+  background: linear-gradient(to bottom, #5074af 0%, #415887 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+  padding: 0;
+  cursor: pointer; }
+
+#login {
+  text-align: center;
+  background: #efefef;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed; }
+
+#login > .helper {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 30%; }
+
+#login > .helper > button > i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  padding: 12px 10px;
+  border-right: 1px solid #294173; }
+
+#login > .helper > button > span {
+  font-size: 18px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 12px; }
+
+#login > .helper > button:hover {
+  background: #3a5684; }
+
+/** End-Login **/
+/** Header **/
+header {
+  background-color: #f6f6f6; }
+  header .header-top {
+    background-color: #254a75; }
+    header .header-top .navbar {
+      margin-bottom: 0 !important; }
+      header .header-top .navbar li.dropdown > a:hover,
+      header .header-top .navbar li.dropdown > a:active,
+      header .header-top .navbar li.dropdown > a:focus {
+        background-color: transparent; }
+      header .header-top .navbar li.dropdown > a {
+        color: #d1d5df; }
+        header .header-top .navbar li.dropdown > a span.name-badge {
+          color: #fff;
+          background: #979797;
+          border: 2px solid #c8c8c9;
+          padding: 5px 8px;
+          border-radius: 50%;
+          font-weight: 600;
+          background-color: #4a90e2; }
+        header .header-top .navbar li.dropdown > a i {
+          color: #fff;
+          font-size: 14px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 5px; }
+      header .header-top .navbar li.dropdown ul.dropdown-menu {
+        padding-top: 18px; }
+  header .header-bottom {
+    min-height: 260px;
+    position: relative; }
+    header .header-bottom .cover-photo {
+      min-height: 222.43px;
+      background-image: url("../../img/Your Cover.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    header .header-bottom .profile-info {
+      position: absolute;
+      bottom: 0px; }
+      header .header-bottom .profile-info img,
+      header .header-bottom .profile-info h4 {
+        display: inline-block; }
+      header .header-bottom .profile-info h4 {
+        position: relative;
+        bottom: 60px;
+        margin-left: 20px;
+        color: #fff; }
+
+/**Main**/
+main.landing {
+  background-color: #f6f6f6;
+  padding: 40px 0 0 0; }
+  main.landing section.toolbar .search-container,
+  main.landing section.toolbar select {
+    width: 300px;
+    height: 40px; }
+  main.landing section.toolbar .search-container {
+    display: inline-block;
+    border: 1px solid #979797;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 5px;
+    position: relative;
+    background: #fff; }
+    main.landing section.toolbar .search-container input {
+      border: none;
+      height: 100%;
+      width: 90%;
+      background: transparent; }
+    main.landing section.toolbar .search-container i {
+      display: inline-block;
+      vertical-align: middle; }
+  main.landing section.toolbar .select-container {
+    position: relative;
+    display: inline-block; }
+    main.landing section.toolbar .select-container select {
+      background: linear-gradient(180deg, #F2F2F2 0%, #D4D4D4 100%);
+      border: 1px solid #979797;
+      box-shadow: inset 0 2px 0 0 #FFFFFF;
+      margin-left: 14px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+      padding: 9px 11px; }
+    main.landing section.toolbar .select-container i {
+      position: absolute;
+      top: 28.57143%;
+      right: 20px; }
+  main.landing section.list {
+    margin-top: 20px; }
+    main.landing section.list .card {
+      margin-bottom: 40.35px;
+      transition: 0.3s;
+      border-radius: 5px;
+      background-color: #fff;
+      /* 5px rounded corners */ }
+      main.landing section.list .card .img-container {
+        height: 305px;
+        background-color: #DFDFDF;
+        padding: 15px 17.48px;
+        display: table-cell;
+        vertical-align: middle;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px; }
+      main.landing section.list .card article {
+        padding: 18.56px 22.72px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; }
+        main.landing section.list .card article h3 {
+          margin-bottom: 15px;
+          color: #3E4D60;
+          line-height: 36px; }
+        main.landing section.list .card article p {
+          font-family: "Open Sans";
+          font-size: 14px;
+          line-height: 22px;
+          color: #8C94A8;
+          margin-bottom: 15px;
+          height: 93.04px; }
+      main.landing section.list .card small > * {
+        display: inline;
+        vertical-align: middle; }
+      main.landing section.list .card small {
+        width: 52px;
+        font-family: "Open Sans";
+        font-size: 14px;
+        line-height: 19px;
+        color: #3E4D60;
+        padding: 18.56px 22.72px;
+        display: block; }
+        main.landing section.list .card small i {
+          width: 17.79px;
+          height: 17.75px;
+          color: #254A75;
+          margin-right: 5px;
+          font-size: 16px; }
+
+main.inner .toolbar {
+  padding-top: 58px;
+  background-color: #f6f6f6; }
+  main.inner .toolbar a {
+    width: 117px;
+    height: 19px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #0071FF;
+    text-decoration: underline; }
+
+main.inner .news {
+  margin-top: 24px;
+  background-color: #fff; }
+  main.inner .news header {
+    background-color: #fff;
+    margin-bottom: 60px;
+    color: #616972; }
+  main.inner .news main article {
+    padding-bottom: 54.47px; }
+    main.inner .news main article img {
+      border-radius: 5px; }
+    main.inner .news main article h5 {
+      font-family: "Open Sans";
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30px;
+      color: #4A90E2;
+      text-decoration: underline; }
+    main.inner .news main article p {
+      font-family: "Open Sans";
+      font-size: 14px;
+      line-height: 19px;
+      color: #616972;
+      margin-top: 9px; }
+      main.inner .news main article p small {
+        display: block;
+        font-family: "Open Sans";
+        font-size: 12px;
+        line-height: 17px;
+        color: #9B9B9B;
+        margin-top: 8px;
+        position: static;
+        margin-left: 0; }
+    main.inner .news main article small {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: 15px; }
+      main.inner .news main article small a {
+        font-family: "Open Sans";
+        font-size: 12px;
+        line-height: 17px;
+        color: #4A4A4A;
+        text-decoration: underline; }
+
+/**Footer**/
+footer {
+  opacity: 0.55;
+  font-size: 11px;
+  line-height: 15px;
+  color: #908C8C;
+  margin-bottom: 55.77px; }
+  footer .footer-list {
+    display: inline-block;
+    margin: 0 auto; }
+  footer .footer-list li {
+    display: inline;
+    margin-left: 10px; }
+    footer .footer-list li a {
+      color: #908C8C; }
+
+.color-grey {
+  color: #99a7bb; }
+
+.relative {
+  position: relative; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  font-size: 14px; }
+
+h4 {
+  font-size: 23px;
+  font-weight: 600; }
+
+h5 {
+  font-size: 22px;
+  font-weight: 600; }
+
+h3 {
+  font-size: 26px;
+  font-weight: normal; }
+
+hr {
+  border: 0.02 solid #DBDBDB;
+  margin: 13px 0;
+  display: block; }

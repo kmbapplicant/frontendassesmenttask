@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "devtest";
+  src:url("devtest.eot");
+  src:url("devtest.eot?#iefix") format("embedded-opentype"),
+    url("devtest.woff") format("woff"),
+    url("devtest.ttf") format("truetype"),
+    url("devtest.svg#devtest") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "devtest" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "devtest" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back-arrow:before {
+  content: "\61";
+}
+.icon-category:before {
+  content: "\62";
+}
+.icon-left-arrow:before {
+  content: "\63";
+}
+.icon-menu-close15x:before {
+  content: "\64";
+}
+.icon-right-arrow:before {
+  content: "\65";
+}
+.icon-menu15x:before {
+  content: "\66";
+}
+.icon-search-magnifier:before {
+  content: "\67";
+}
+.icon-triangles:before {
+  content: "\68";
+}
+.icon-dropdown-arrow:before {
+  content: "\69";
+}
