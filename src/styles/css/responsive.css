@@ -1,0 +1,50 @@
+/** Header **/
+@media (max-width: 767px) {
+  header {
+    background-color: #f6f6f6; }
+    header .header-top {
+      background-color: #254a75; }
+      header .header-top .navbar {
+        margin-bottom: 0 !important; }
+        header .header-top .navbar li.dropdown > a:hover,
+        header .header-top .navbar li.dropdown > a:active,
+        header .header-top .navbar li.dropdown > a:focus {
+          background-color: transparent; }
+        header .header-top .navbar li.dropdown > a {
+          color: #d1d5df; }
+          header .header-top .navbar li.dropdown > a span.name-badge {
+            color: #fff;
+            background: #979797;
+            border: 2px solid #c8c8c9;
+            padding: 5px 8px;
+            border-radius: 50%;
+            font-weight: 600;
+            background-color: #4a90e2; }
+          header .header-top .navbar li.dropdown > a i {
+            color: #fff;
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px; }
+        header .header-top .navbar li.dropdown ul.dropdown-menu {
+          padding-top: 18px; }
+    header .header-bottom {
+      min-height: 260px;
+      position: relative; }
+      header .header-bottom .cover-photo {
+        min-height: 222.43px;
+        background-image: url("../../img/Your Cover.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      header .header-bottom .profile-info {
+        position: absolute;
+        bottom: 0px; }
+        header .header-bottom .profile-info img,
+        header .header-bottom .profile-info h4 {
+          display: inline-block; }
+        header .header-bottom .profile-info h4 {
+          position: relative;
+          bottom: 60px;
+          margin-left: 20px;
+          color: #fff; } }

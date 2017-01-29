@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 @import '../css/reset.css';
 @import 'desktop.scss';
+@import 'responsive.scss';
+
+/**General Styles**/
 .color-grey {
     color: rgba(153, 167, 187, 1.0);
 }

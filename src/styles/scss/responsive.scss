@@ -1,0 +1,67 @@
+/** Header **/
+
+@media (max-width: 767px) {
+    header {
+        background-color: rgba(246, 246, 246, 1.0);
+        .header-top {
+            background-color: rgba(37, 74, 117, 1.0);
+            .navbar {
+                margin-bottom: 0 !important;
+                li.dropdown>a:hover,
+                li.dropdown>a:active,
+                li.dropdown>a:focus {
+                    background-color: transparent;
+                }
+                li.dropdown>a {
+                    color: rgba(209, 213, 223, 1.0);
+                    span.name-badge {
+                        color: #fff;
+                        background: rgba(151, 151, 151, 1.0);
+                        border: 2px solid rgba(200, 200, 201, 1.0);
+                        padding: 5px 8px;
+                        border-radius: 50%;
+                        font-weight: 600;
+                        background-color: rgba(74, 144, 226, 1.0);
+                    }
+                    i {
+                        color: #fff;
+                        font-size: 14px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 5px;
+                    }
+                }
+                li.dropdown {
+                    ul.dropdown-menu {
+                        padding-top: 18px;
+                    }
+                }
+            }
+        }
+        .header-bottom {
+            min-height: 260px;
+            position: relative;
+            .cover-photo {
+                min-height: 222.43px;
+                background-image: url('../../img/Your Cover.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .profile-info {
+                position: absolute;
+                bottom: 0px;
+                img,
+                h4 {
+                    display: inline-block;
+                }
+                h4 {
+                    position: relative;
+                    bottom: 60px;
+                    margin-left: 20px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

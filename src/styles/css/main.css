@@ -101,11 +101,11 @@ main.landing {
   background-color: #f6f6f6;
   padding: 40px 0 0 0; }
   main.landing section.toolbar .search-container,
-  main.landing section.toolbar select {
-    width: 300px;
+  main.landing section.toolbar .select-container select {
+    width: 100%;
     height: 40px; }
   main.landing section.toolbar .search-container {
-    display: inline-block;
+    display: block;
     border: 1px solid #979797;
     box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
     border-radius: 3px;
@@ -116,18 +116,20 @@ main.landing {
       border: none;
       height: 100%;
       width: 90%;
-      background: transparent; }
+      background: transparent;
+      margin-left: 18px; }
     main.landing section.toolbar .search-container i {
-      display: inline-block;
+      position: absolute;
+      left: 7px;
+      top: 33.33333%;
       vertical-align: middle; }
   main.landing section.toolbar .select-container {
     position: relative;
-    display: inline-block; }
+    display: block; }
     main.landing section.toolbar .select-container select {
       background: linear-gradient(180deg, #F2F2F2 0%, #D4D4D4 100%);
       border: 1px solid #979797;
       box-shadow: inset 0 2px 0 0 #FFFFFF;
-      margin-left: 14px;
       -webkit-appearance: none;
       -moz-appearance: none;
       text-indent: 1px;
@@ -135,24 +137,37 @@ main.landing {
       padding: 9px 11px; }
     main.landing section.toolbar .select-container i {
       position: absolute;
-      top: 28.57143%;
-      right: 20px; }
+      top: 33.33333%;
+      right: 10px; }
   main.landing section.list {
     margin-top: 20px; }
     main.landing section.list .card {
       margin-bottom: 40.35px;
       transition: 0.3s;
       border-radius: 5px;
-      background-color: #fff;
-      /* 5px rounded corners */ }
+      background-color: #fff; }
       main.landing section.list .card .img-container {
         height: 305px;
         background-color: #DFDFDF;
         padding: 15px 17.48px;
-        display: table-cell;
-        vertical-align: middle;
+        text-align: center;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px; }
+        main.landing section.list .card .img-container .helper {
+          position: relative;
+          width: 100%;
+          height: 100%; }
+          main.landing section.list .card .img-container .helper img {
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
       main.landing section.list .card article {
         padding: 18.56px 22.72px;
         border-bottom-left-radius: 5px;
@@ -260,6 +275,58 @@ footer {
     footer .footer-list li a {
       color: #908C8C; }
 
+/** Header **/
+@media (max-width: 767px) {
+  header {
+    background-color: #f6f6f6; }
+    header .header-top {
+      background-color: #254a75; }
+      header .header-top .navbar {
+        margin-bottom: 0 !important; }
+        header .header-top .navbar li.dropdown > a:hover,
+        header .header-top .navbar li.dropdown > a:active,
+        header .header-top .navbar li.dropdown > a:focus {
+          background-color: transparent; }
+        header .header-top .navbar li.dropdown > a {
+          color: #d1d5df; }
+          header .header-top .navbar li.dropdown > a span.name-badge {
+            color: #fff;
+            background: #979797;
+            border: 2px solid #c8c8c9;
+            padding: 5px 8px;
+            border-radius: 50%;
+            font-weight: 600;
+            background-color: #4a90e2; }
+          header .header-top .navbar li.dropdown > a i {
+            color: #fff;
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px; }
+        header .header-top .navbar li.dropdown ul.dropdown-menu {
+          padding-top: 18px; }
+    header .header-bottom {
+      min-height: 260px;
+      position: relative; }
+      header .header-bottom .cover-photo {
+        min-height: 222.43px;
+        background-image: url("../../img/Your Cover.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      header .header-bottom .profile-info {
+        position: absolute;
+        bottom: 0px; }
+        header .header-bottom .profile-info img,
+        header .header-bottom .profile-info h4 {
+          display: inline-block; }
+        header .header-bottom .profile-info h4 {
+          position: relative;
+          bottom: 60px;
+          margin-left: 20px;
+          color: #fff; } }
+
+/**General Styles**/
 .color-grey {
   color: #99a7bb; }
 
