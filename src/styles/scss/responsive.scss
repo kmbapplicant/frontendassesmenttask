@@ -1,11 +1,45 @@
-/** Header **/
-
-@media (max-width: 767px) {
-    header {
+@media (max-width: 991px) {
+    /** Header **/
+    header.landing {
+        position: relative;
+        height: 670px;
         background-color: rgba(246, 246, 246, 1.0);
         .header-top {
-            background-color: rgba(37, 74, 117, 1.0);
+            position: absolute;
+            height: 265.97px;
+            background-color: rgba(37, 74, 117, 0.83);
+            width: 100%;
+            z-index: 1;
             .navbar {
+                #nav-bar {
+                    border: none;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    position: absolute;
+                    top: 66.03px;
+                    left: percentage(3/8);
+                    z-index: 4;
+                }
+                .navbar-nav {
+                    margin: 0;
+                }
+                .navbar-header,
+                .navbar-collapse li a {
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: 600;
+                    padding: 0;
+                }
+                .navbar-collapse li a {
+                    text-align: center;
+                    line-height: 50px;
+                }
+                .navbar-collapse li a:hover,
+                .navbar-collapse li a:active,
+                .navbar-collapse li a:focus {
+                    background: transparent;
+                }
                 margin-bottom: 0 !important;
                 li.dropdown>a:hover,
                 li.dropdown>a:active,
@@ -39,29 +73,167 @@
             }
         }
         .header-bottom {
-            min-height: 260px;
             position: relative;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
             .cover-photo {
-                min-height: 222.43px;
-                background-image: url('../../img/Your Cover.jpg');
+                z-index: 0;
+                height: 100%;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
             }
             .profile-info {
                 position: absolute;
-                bottom: 0px;
+                height: 100%;
+                top: 79.63px;
+                left: 33vw;
+                z-index: 2;
+                img {
+                    width: 91.58px;
+                }
                 img,
                 h4 {
-                    display: inline-block;
+                    display: block;
+                    margin: 0 auto;
                 }
                 h4 {
-                    position: relative;
-                    bottom: 60px;
-                    margin-left: 20px;
+                    margin-left: 0;
+                    top: 30px;
                     color: #fff;
                 }
             }
         }
+        .more-arrow {
+            position: absolute;
+            width: 100%;
+            font-size: 23px;
+            color: #fff;
+            bottom: 35px;
+        }
+    }
+    header.inner {
+        background-color: #254A75;
+        .header-top {
+            background-color: transparent;
+        }
+        .navbar-header {
+            float: left;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            font-size: 16px;
+        }
+        .navbar-brand {
+            float: none !important;
+        }
+        .navbar-brand,
+        .icon-back-arrow {
+            color: #fff !important;
+        }
+    }
+    main.inner {
+        .news {
+            margin-top: 0;
+            article {
+                .img-container {
+                    padding-left: 0;
+                    padding-right: 0;
+                    border-radius: 0;
+                    height: 200px;
+                    width: 100%;
+                }
+                small {
+                    position: static;
+                    margin-left: 0;
+                    a {
+                        font-family: "Open Sans";
+                        font-size: 12px;
+                        line-height: 17px;
+                        color: #4A4A4A;
+                        text-decoration: underline;
+                        display: block;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    main.landing {
+        .pagination-more {
+            margin: 0 auto;
+            margin-bottom: 40.35px;
+            color: #0071FF;
+        }
+    }
+    /**Footer**/
+    footer {
+        opacity: 0.55;
+        font-size: 11px;
+        line-height: 15px;
+        color: #908C8C;
+        margin-bottom: 55.77px;
+        .footer-list {
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .footer-list li {
+            display: inline;
+            margin-left: 10px;
+            a {
+                color: #908C8C;
+            }
+        }
+        .footer-components>div {
+            margin-top: 18.5px;
+            text-align: center;
+        }
+        .footer-components>div:last-child>small {
+            float: none !important;
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width: 991px) {
+    /**Fix Navbar Collapse**/
+    .navbar-header {
+        float: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
     }
 }

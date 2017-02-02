@@ -1,0 +1,43 @@
+<main class="inner">
+    <!--Toolbar-->
+    <section class="hidden-xs hidden-sm toolbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a ui-sref="landing">Back to Channels</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <!--Toolbar/-->
+    <!--News-->
+    <section class="news">
+        <div class="container">
+            <header class="hidden-xs hidden-sm">
+                <h5>{{vm.agency.name}}</h5>
+            </header>
+            <article ng-repeat="article in vm.agency.articles">
+                <div class="row">
+                    <div class="img-container col-md-2 col-xs-12 col-sm-12 eq-height" style="background-image:url({{article.urlToImage}})">
+                    </div>
+                    <div class="col-md-10 col-xs-12 col-sm-12 eq-height relative article-container">
+                        <h5>{{article.title}}</h5>
+                        <p>{{article.description}}
+                            <small>{{article.publishedAt}}</small>
+                        </p>
+                        <!--<div class="container">-->
+                        <div class="helper">
+                            <small>
+                                <i class="icon-author"></i> <a target="_blank" href="{{article.author}}">{{article.author}}</a>
+                            </small>
+                        </div>
+                        <!--</div>-->
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--News/-->
+    <hr class="no-margin">
+</main>

@@ -1,0 +1,49 @@
+<div class="header-top" id="header-top">
+    {{vm.id}}
+    <nav class="navbar">
+        <div class="container">
+            <div ng-if="vm.isInnerPage" class="visible-xs visible-sm navbar-header">
+                <a class="pull-left" ui-sref="landing"><i class="icon-back-arrow"></i></a>
+                <a class="navbar-brand">{{vm.agency}}</a>
+            </div>
+            <div ng-if="!vm.isInnerPage" class="navbar-header">
+                <button ng-click="vm.toggleIndex()" type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#nav-bar">
+                            <!--Have to change icon on expand-->
+                        <i class=" icon-menu15x"></i>                      
+                    </button>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-bar">
+                <ul ng-if="!vm.isInnerPage" class="nav navbar-nav visible-xs visible-sm">
+                    <li><a>Home</a></li>
+                    <li><a>Settings</a></li>
+                    <li><a ng-click="vm.logout()">Logout</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="name-badge">{{vm.user.primLetters}}</span> Hi {{vm.user.first_name}}
+                            <i class="icon-dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a>Settings</a></li>
+                            <li><a ng-click="vm.logout()">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div ng-hide="vm.isInnerPage && !base.isDesktop" class="header-bottom">
+    <div class="cover-photo" style="background-image:url({{vm.user.cover}})">
+    </div>
+    <div class="container">
+        <div class="profile-info">
+            <img ng-class="{'img-circle':!base.isDesktop}" class="img-thumbnail" ng-src="{{vm.user.photo}}" alt="profile-image">
+            <h4>{{vm.user.first_name + ' ' + vm.user.last_name}}</h4>
+        </div>
+    </div>
+</div>
+<div ng-hide="vm.isInnerPage && !base.isDesktop" class="text-center more-arrow visible-xs vissible-sm">
+    <i class="icon-dropdown-arrow"></i>
+</div>

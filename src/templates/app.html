@@ -1,0 +1,6 @@
+<div>
+    <header ng-controller="headerCtrl as vm" ng-class="vm.currentState" ng-include="'templates/header.html'"></header>
+    <div class="main" ui-view>
+    </div>
+    <footer ng-controller="footerCtrl as vm" ng-class="vm.currentState" class="main-footer" ng-include="'templates/footer.html'"></footer>
+</div>

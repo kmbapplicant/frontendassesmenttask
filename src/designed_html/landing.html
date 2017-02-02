@@ -15,12 +15,24 @@
 
 <body>
     <!--Header-->
-    <header>
+    <header id="landing">
+        <!--Have to change z-index on dropdown collapse-->
         <div class="header-top">
             <nav class="navbar">
                 <div class="container">
-                    <div class="pull-right">
-                        <ul class="nav navbar-nav">
+                    <div class="navbar-header">
+                        <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#nav-bar">
+                            <!--Have to change icon on expand-->
+                        <i class=" icon-menu15x"></i>                      
+                    </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="nav-bar">
+                        <ul class="nav navbar-nav visible-xs">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right hidden-xs">
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                     <span class="name-badge">LR</span> Hi Lara
@@ -41,10 +53,14 @@
             </div>
             <div class="container">
                 <div class="profile-info">
-                    <img class="img-thumbnail" src="img/profile-image.png" alt="profile-image">
+                    <!--Have to add ng-class for img circle-->
+                    <img class="img-thumbnail img-circle" src="img/profile-image.png" alt="profile-image">
                     <h4>Lara Croft</h4>
                 </div>
             </div>
+        </div>
+        <div class="text-center more-arrow visible-xs">
+            <i class="icon-dropdown-arrow"></i>
         </div>
     </header>
     <!--Header/-->
@@ -192,9 +208,9 @@
     <!--Footer-->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4"><small>Copyright Creative Workers</small></div>
-                <div class="col-md-4">
+            <div class="row footer-components">
+                <div class="col-md-4 col-xs-12"><small>Copyright Creative Workers</small></div>
+                <div class="col-md-4 col-xs-12">
                     <div class="text-center">
                         <ul class="footer-list">
                             <li><a href="#">Privacy</a></li>
@@ -204,7 +220,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12">
                     <small class="pull-right">Kissmybutton © 2017</small>
                 </div>
             </div>

@@ -5,6 +5,7 @@
 @import 'responsive.scss';
 
 /**General Styles**/
+
 .color-grey {
     color: rgba(153, 167, 187, 1.0);
 }
@@ -38,4 +39,13 @@ hr {
     border: 0.02 solid #DBDBDB;
     margin: 13px 0;
     display: block;
+}
+
+select,
+a {
+    cursor: pointer;
+}
+
+.no-margin {
+    margin: 0;
 }

@@ -1,0 +1,14 @@
+<div id="myPagination" class="form-inline">
+    <label for="pagination-desc">displaying page</label>
+    <div class="input-group">
+        <span class="input-group-btn">
+        <button ng-click="((page-1)==0)?return:myPage=myPage-1; selectPage(page-1);" ng-class="{'btn-disabled':(page-1)==0}" class="btn btn-default "><i class="icon-left-arrow"></i></button>
+        </span>
+        <input ng-blur="(!(myPage==page)?myPage=page:return)" ng-init="myPage = 1" ng-change="selectPage(myPage)" ng-model="myPage"
+            type="number" class="form-control page-input">
+    </div>
+    <label for="pagination-desc-2">of</label>
+    <button ng-click="selectPage(pages.length)" class="btn btn-link">{{pages.length}}</button>
+    <button ng-click="((page+1)>pages.length)?return:myPage=myPage+1; selectPage(page+1); " ng-class="{'btn-disabled':(page+1)>pages.length}"
+        class="btn btn-default btn-next"><i class="icon-right-arrow"></i></button>
+</div>

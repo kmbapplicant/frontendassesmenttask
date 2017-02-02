@@ -15,11 +15,15 @@
 
 <body>
     <!--Header-->
-    <header>
+    <header id="inner">
         <div class="header-top">
             <nav class="navbar">
-                <div class="container">
-                    <div class="pull-right">
+                <div class="container text-center">
+                    <div class="visible-xs visible-sm navbar-header">
+                        <a class="pull-left" href="#"><i class="icon-back-arrow"></i></a>
+                        <a class="navbar-brand">ABC News</a>
+                    </div>
+                    <div class="hidden-xs hidden-sm pull-right">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -36,7 +40,7 @@
                 </div>
             </nav>
         </div>
-        <div class="header-bottom">
+        <div class="hidden-xs hidden-sm header-bottom">
             <div class="cover-photo">
             </div>
             <div class="container">
@@ -51,7 +55,7 @@
     <!--Main Content-->
     <main class="inner">
         <!--Toolbar-->
-        <section class="toolbar">
+        <section class="hidden-xs hidden-sm toolbar">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -65,49 +69,47 @@
         <!--News-->
         <section class="news">
             <div class="container">
-                <header>
+                <header class="hidden-xs hidden-sm">
                     <h5>ABC News (AU)</h5>
                 </header>
-                <main>
-                    <article>
-                        <div class="row">
-                            <div class="col-md-2 col-xs-12 eq-height">
-                                <img src="img/7060760-1x1-700x700.jpg" class="img-responsive" alt="news-img">
-                            </div>
-                            <div class="col-md-10 col-xs-12 eq-height relative">
-                                <h5>Special approval given to Perth air show which ended in tragedy</h5>
-                                <p>As the search for answers continues over a fatal Swan River plane crash, authorities reveal
-                                    they do not usually approve air displays over public gatherings or boats on the water.
-                                    <small>2017-01-27T08:40:28Z</small>
-                                </p>
-                                <div class="container">
-                                    <small>
+                <article>
+                    <div class="row">
+                        <div class="img-container col-md-2 col-xs-12 col-sm-12 eq-height">
+                            <img src="img/7060760-1x1-700x700.jpg" class="img-responsive" alt="news-img">
+                        </div>
+                        <div class="col-md-10 col-xs-12 col-sm-12 eq-height relative">
+                            <h5>Special approval given to Perth air show which ended in tragedy</h5>
+                            <p>As the search for answers continues over a fatal Swan River plane crash, authorities reveal they
+                                do not usually approve air displays over public gatherings or boats on the water.
+                                <small>2017-01-27T08:40:28Z</small>
+                            </p>
+                            <!--<div class="container">-->
+                            <small>
                                 <i class="icon-a"></i> <a href="#">http://www.abc.net.au/news/7053638</a>
                             </small>
-                                </div>
-                            </div>
+                            <!--</div>-->
                         </div>
-                    </article>
-                    <article>
-                        <div class="row">
-                            <div class="col-md-2 col-xs-12 eq-height">
-                                <img src="img/7060760-1x1-700x700.jpg" class="img-responsive" alt="news-img">
-                            </div>
-                            <div class="col-md-10 col-xs-12 eq-height relative">
-                                <h5>Special approval given to Perth air show which ended in tragedy</h5>
-                                <p>As the search for answers continues over a fatal Swan River plane crash, authorities reveal
-                                    they do not usually approve air displays over public gatherings or boats on the water.
-                                    <small>2017-01-27T08:40:28Z</small>
-                                </p>
-                                <div class="container">
-                                    <small>
+                    </div>
+                </article>
+                <article>
+                    <div class="row">
+                        <div class="img-container col-md-2 col-xs-12 col-sm-12 eq-height">
+                            <img src="img/7060760-1x1-700x700.jpg" class="img-responsive" alt="news-img">
+                        </div>
+                        <div class="col-md-10 col-xs-12 col-sm-12 eq-height relative">
+                            <h5>Special approval given to Perth air show which ended in tragedy</h5>
+                            <p>As the search for answers continues over a fatal Swan River plane crash, authorities reveal they
+                                do not usually approve air displays over public gatherings or boats on the water.
+                                <small>2017-01-27T08:40:28Z</small>
+                            </p>
+                            <!--<div class="container">-->
+                            <small>
                                 <i class="icon-a"></i> <a href="#">http://www.abc.net.au/news/7053638</a>
                             </small>
-                                </div>
-                            </div>
+                            <!--</div>-->
                         </div>
-                    </article>
-                </main>
+                    </div>
+                </article>
             </div>
         </section>
         <!--News/-->
@@ -117,7 +119,7 @@
     <!--Footer-->
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row footer-components">
                 <div class="col-md-4"><small>Copyright Creative Workers</small></div>
                 <div class="col-md-4">
                     <div class="text-center">

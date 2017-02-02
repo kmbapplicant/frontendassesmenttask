@@ -1,8 +1,24 @@
 {
-  "name": "frontendassesmenttask",
+  "name": "project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-easyfb": "^1.5.1",
+    "angular-ui-bootstrap": "^2.5.0",
+    "angular-ui-router": "^0.4.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "jquery-match-height": "^0.7.0",
+    "satellizer": "^0.15.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp-sass": "^3.1.0",
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,15 +26,10 @@
     "type": "git",
     "url": "git+https://github.com/kmbapplicant/frontendassesmenttask.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kmbapplicant/frontendassesmenttask/issues"
-  },
-  "homepage": "https://github.com/kmbapplicant/frontendassesmenttask#readme",
-  "devDependencies": {
-    "browser-sync": "^2.18.6",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
   }
 }

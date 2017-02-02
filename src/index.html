@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="styles/css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <!--App Styles-->
     <link href="styles/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-    <section>
-        
-    </section>
+<body ng-controller="baseCtrl as base">
+    <div ui-view>
+    </div>
 </body>
+<!--jQuery-->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<!--jQuery matchHeight-->
+<script src="../node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+<!--Bootstrap JS-->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--Angular 1.5.8-->
+<script src="../node_modules/angular/angular.min.js"></script>
+<!--Angular easyfb-->
+<script src="../node_modules/angular-easyfb/build/angular-easyfb.min.js"></script>
+<!--UI Router-->
+<script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!--UI Bootstrap-->
+<script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<!--App Files-->
+<script src="app/app.module.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/app.constants.js"></script>
+<script src="app/app.run.js"></script>
+<!--Controllers-->
+<script src="app/controllers/base.controller.js"></script>
+<script src="app/controllers/app.controller.js"></script>
+<script src="app/controllers/header.controller.js"></script>
+<script src="app/controllers/footer.controller.js"></script>
+<script src="app/controllers/login.controller.js"></script>
+<script src="app/controllers/landing.controller.js"></script>
+<script src="app/controllers/inner.controller.js"></script>
+<!--Services-->
+<script src="app/services/user.service.js"></script>
+<script src="app/services/http.service.js"></script>
+<script src="app/services/news.service.js"></script>
+<script src="app/services/auth.service.js"></script>
+<!--Filters-->
+<script src="app/filters/start_from.filter.js"></script>
 
 </html>

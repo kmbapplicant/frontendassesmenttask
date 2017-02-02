@@ -1,0 +1,67 @@
+<main class="landing">
+    <div class="container">
+        <!--Toolbar-->
+        <section class="toolbar">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <div class="search-container">
+                                <i class="icon-search-magnifier"></i>
+                                <input ng-model="vm.query" type="text" class="search" placeholder="Search Channels">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <div class="select-container">
+                                <select ng-model="vm.category" ng-options="category for category in vm.categoryOptions">
+                                    <option value="">Choose category</option>
+                                </select>
+                                <i class="icon-triangles"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <!--Toolbar/-->
+        <!--List-->
+        <section class="list">
+            <div class="row">
+                <div class="col-md-4" ng-repeat="source in vm.sources | filter: {name:vm.query, category:vm.category || undefined} | startFrom:(vm.currentPage-1)*vm.pageSize | limitTo:vm.pageSize">
+                    <div class="card">
+                        <div class="img-container">
+                            <div class="helper">
+                                <img ng-src="{{source.urlsToLogos.medium}}" alt="{{source.name}}" class="img-responsive">
+                            </div>
+                        </div>
+                        <article>
+                            <a ui-sref="inner ({agencyId:source.id, agencyName:source.name})">
+                                <h3>{{source.name}}</h3>
+                                <p>{{source.description}}</p>
+                            </a>
+                        </article>
+                        <small><i class="icon-category"></i><span class="text-capitalize">{{source.category}}</span></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--List/-->
+        <!--Pagination-->
+        <section>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <ul uib-pagination template-url="templates/myPagination.html" total-items="(vm.sources  | filter: {name:vm.query, category:vm.category || undefined}).length"
+                            ng-model="vm.currentPage" items-per-page="vm.pageSize" class="hidden-xs hidden-sm"></ul>
+                    </div>
+                    <div>
+                        <button ng-click="vm.showMore()" class="btn-link pagination-more visible-xs visible-sm">more...</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Pagination/-->
+        <hr class="no-margin">
+    </div>
+</main>
