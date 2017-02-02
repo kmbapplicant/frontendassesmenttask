@@ -36,10 +36,5 @@
         };
 
 
-        function matchHeight() {
-            $timeout(function () {
-                $('.eq-height').matchHeight();
-            }, 750);
-        };
     }
 })();
